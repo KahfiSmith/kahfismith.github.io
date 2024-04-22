@@ -54,9 +54,17 @@ body::-webkit-scrollbar {
   font-size: 1.3rem;
   display: inline-block;
   font-weight: 500;
-  margin: 0 1rem;
+  margin: 0 0 0 1rem;
   padding: 0.4rem 1rem;
   transition: background-color 0.3s;
+}
+
+.navbar-logo {
+  background-color: red;
+}
+
+.navbar-nav {
+  background: red;
 }
 
 .navbar .navbar-nav a:hover {
@@ -73,33 +81,17 @@ body::-webkit-scrollbar {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   color: var(--color);
-  padding: 1.4rem 7%;
+  padding: 1.4rem 10%;
 }
 
 .hero .content {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
-  /* padding: 1.4rem 7%; */
-  gap: 20px;  
-}
-
-.hero .content .left-column {
-  flex: 1;
-  max-width: 30%;
-  display: flex;          
-  justify-content: center;
-  align-items: center;
-  /* background: red; */
-}
-
-.hero .content .right-column {
-  flex: 1;
-  max-width: 40%;
-  /* background: blue; */
-  /* padding: 0 20px; */
+  flex-direction: column;
+  background: red;
 }
 
 .hero .content h1 {
@@ -112,7 +104,6 @@ body::-webkit-scrollbar {
   font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: 0.5em;
-  border-bottom: 2px solid var(--border);
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
@@ -121,12 +112,14 @@ body::-webkit-scrollbar {
   font-size: 1rem;
   text-align: justify;
   line-height: 1.7rem;
+  text-align: center;
 }
 
 .hero .content img {
-  width: 70%;
+  width: 24%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 /* Laptop */
