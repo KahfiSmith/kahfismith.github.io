@@ -19,9 +19,8 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: var(--background);
+  font-family: "Inter", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -59,18 +58,19 @@ body::-webkit-scrollbar {
   transition: background-color 0.3s;
 }
 
-.navbar-logo {
+/* .navbar-logo {
   background-color: red;
 }
 
 .navbar-nav {
   background: red;
-}
+} */
 
 .navbar .navbar-nav a:hover {
   background-color: var(--secondary);
   padding: 0.4rem 1rem;
   border-radius: 5px;
+  color: white;
 }
 
 #menu {
@@ -85,27 +85,30 @@ body::-webkit-scrollbar {
   text-align: center;
   color: var(--color);
   padding: 1.4rem 10%;
+  /* background: red; */
 }
 
 .hero .content {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: red;
+  /* background: red; */
 }
 
 .hero .content h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 550;
-  font-family: "Lora", serif;
+  letter-spacing: 0.3rem;
+  font-family: "Lora", sans-serif;
+  margin-bottom: 1rem;
 }
 
 .hero .content h2 {
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 550;
   letter-spacing: 0.5em;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .hero .content p {
@@ -116,10 +119,55 @@ body::-webkit-scrollbar {
 }
 
 .hero .content img {
-  width: 24%;
+  width: 20%;
   height: auto;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.social-media {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social-media i {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(43, 55, 73);
+  border-radius: 50%;
+  font-size: 25px;
+  color: white;
+  line-height: 50px;
+  transition: all 0.3s ease-out;
+}
+
+.social-media ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.social-media ul li {
+  list-style: none;
+}
+
+.social-media i {
+  transition: all 0.3s ease-out;
+}
+
+.social-media i:hover {
+  background-color: rgb(76, 90, 110);
+  border-radius: 50%;
+}
+
+.about {
+  padding: 1rem 7%;
+  color: var(--color);
+  font-weight: 500;
+  font-style: 2.5rem;
 }
 
 /* Laptop */
