@@ -30,6 +30,7 @@ body::-webkit-scrollbar {
 .navbar {
   display: flex;
   justify-content: space-between;
+  background-color: var(--background);
   color: var(--color);
   align-items: center;
   padding: 1.4rem 7%;
@@ -58,14 +59,6 @@ body::-webkit-scrollbar {
   transition: background-color 0.3s;
 }
 
-/* .navbar-logo {
-  background-color: red;
-}
-
-.navbar-nav {
-  background: red;
-} */
-
 .navbar .navbar-nav a:hover {
   background-color: var(--secondary);
   padding: 0.4rem 1rem;
@@ -84,7 +77,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   text-align: center;
   color: var(--color);
-  padding: 1.4rem 10%;
+  padding-top: 100px;
   /* background: red; */
 }
 
@@ -92,6 +85,7 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 1rem 7%;
   /* background: red; */
 }
 
@@ -164,11 +158,16 @@ body::-webkit-scrollbar {
 }
 
 .about {
-  padding: 1rem 7%;
+  padding: 7rem 7% 1rem;
+  min-height: 100vh;
+}
+
+.about h2 {
   color: var(--color);
   font-weight: 500;
   font-style: 2.5rem;
 }
+
 
 /* Laptop */
 @media (max-width: 1366px) {
