@@ -99,17 +99,9 @@ body::-webkit-scrollbar {
 .hero .content h1 {
   font-size: 2rem;
   font-weight: 550;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
   font-family: "Lora", sans-serif;
   margin-bottom: 0.5rem;
-}
-
-.hero .content h2 {
-  font-size: 1rem;
-  font-weight: 550;
-  letter-spacing: 0.5em;
-  margin-bottom: 1.5rem;
-  text-align: center;
 }
 
 .hero .content p {
@@ -119,18 +111,16 @@ body::-webkit-scrollbar {
   font-weight: 500;
 }
 
-.hero .content img {
-  width: 20%;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+.hero .content span {
+  color: var(--icon);
+  font-style: italic;
 }
 
 .social-media {
   width: 100%;
   text-align: center;
   margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .social-media i {
@@ -169,13 +159,18 @@ body::-webkit-scrollbar {
   font-size: 1.5rem;
   letter-spacing: normal;
   text-align: left;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 
 .hero .content .about p {
   color: var(--color);
   text-align: justify;
   line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .content .about span {
+  font-style: normal;
 }
 
 /* Laptop */
