@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
   </head>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="style.css" />
   <link
     rel="stylesheet"
@@ -22,22 +23,22 @@
   <body>
     <!-- navbar -->
     <nav class="navbar">
-      <a href="#" class="navbar-logo">K<span>Smith</span></a>
+      <div class="navbar-logo">
+        <a href="#">K<span>Smith</span></a>
+      </div>
       <div class="navbar-nav">
-        <!-- <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skill">Skill</a> -->
-        <a href="#contact">Contact me</a>
-        <a href="#" id="menu"><i data-feather="menu"></i></a>
+        <a href="#"><i data-lucide="sun"></i></a>
       </div>
     </nav>
-    <section class="hero" id="home">
+    <section class="hero">
       <main class="content">
-        <h1>Mohamad Al-Kahfi</h1>
-        <p>
-          I'm a <span>Frontend Web Developer</span> responsible for creating and
-          optimizing visual elements and intuitive interfaces.
-        </p>
+        <div class="bio">
+          <h1>Mohamad Al-Kahfi</h1>
+          <p>
+            I'm a <span>Frontend Web Developer</span> responsible for creating
+            and optimizing visual elements and intuitive interfaces.
+          </p>
+        </div>
         <div class="social-media">
           <ul>
             <li>
@@ -85,14 +86,49 @@
           </p>
           <p>
             Currently, I'm still in the beginning stages as a developer, with a
-            basic understanding of <span>HTML, CSS, JavaScript and Bootstrap.</span> I'm in
-            the process of learning <span>React.Js</span> more interactive web
-            applications and <span>Node.js</span> to understand more about
-            server side development. Apart from that, I am also quite fluent in
-            <span>PHP</span> and already have experience using the <span>Laravel</span> framework. By the way I like playing games and watching anime.
+            basic understanding of
+            <span>HTML, CSS, JavaScript and Bootstrap.</span> I'm in the process
+            of learning <span>React.js</span> more interactive web applications
+            and <span>Node.js</span> to understand more about server side
+            development. Apart from that, I am also quite fluent in
+            <span>PHP</span> and already have experience using the
+            <span>Laravel</span> framework. By the way I also like playing games
+            and watching anime.
           </p>
+        </div>
+        <div class="project">
+          <h2>Projects</h2>
+          <div class="list-project">
+            <img src="image/medmart.png" alt="" />
+            <div class="desc">
+              <h3>Medmart - Platform for buying and selling medicines</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+                ratione possimus ad ipsa, est tempore repellendus deserunt
+                voluptatibus magni delectus aut provident quos alias quas
+                dolorem repellat, facilis necessitatibus facere. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Fuga, ipsum.
+              </p>
+            </div>
+          </div>
+          <div class="list-project">
+            <img src="image/medmart.png" alt="" />
+            <div class="desc">
+              <h3>Medmart - Platform for buying and selling medicines</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+                ratione possimus ad ipsa, est tempore repellendus deserunt
+                voluptatibus magni delectus aut provident quos alias quas
+                dolorem repellat, facilis necessitatibus facere. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Fuga, ipsum.
+              </p>
+            </div>
+          </div>
         </div>
       </main>
     </section>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>

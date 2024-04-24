@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
   background-color: var(--background);
   color: var(--color);
   align-items: center;
-  padding: 0.7rem 26%;
+  padding: 1rem 26%;
   border-bottom: 0.5px solid var(--border);
   position: fixed;
   z-index: 9999;
@@ -43,49 +43,49 @@ body::-webkit-scrollbar {
   right: 0;
 }
 
-.navbar .navbar-logo {
+.navbar .navbar-logo a{
   color: var(--color);
   font-size: 1.5rem;
   line-height: 1.5rem;
   font-weight: 550;
   font-family: "Lora", sans-serif;
+}
 
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar .navbar-logo span {
   color: var(--icon);
+  font-weight: 550;
   font-family: "Lora", sans-serif;
 }
 
 .navbar .navbar-nav a {
   color: var(--color);
-  font-size: 1rem;
-  display: inline-block;
-  font-weight: 500;
-  /* margin: 0 0 0 1rem; */
-  padding: 0.4rem 1rem;
-  transition: background-color 0.3s;
+  padding: 0.2rem;
+  transition: all 0.3s ease-out;
+  display: flex;         
+  justify-content: center; 
+  align-items: center;    
+  background-color: var(--primary);
+  border-radius: 5px;
 }
 
 .navbar .navbar-nav a:hover {
   background-color: var(--secondary);
-  padding: 0.4rem 1rem;
-  border-radius: 5px;
   color: white;
-}
-
-#menu {
-  display: none;
+  border-radius: 5px;
 }
 
 .hero {
   min-height: 100vh;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   color: var(--color);
   padding-top: 5rem;
-  /* background: red; */
 }
 
 .hero .content {
@@ -93,10 +93,9 @@ body::-webkit-scrollbar {
   align-items: start;
   flex-direction: column;
   padding: 0.7rem 26%;
-  /* background: red; */
 }
 
-.hero .content h1 {
+.hero .content .bio h1 {
   font-size: 2rem;
   font-weight: 550;
   letter-spacing: 0.1rem;
@@ -104,16 +103,17 @@ body::-webkit-scrollbar {
   margin-bottom: 0.5rem;
 }
 
-.hero .content p {
+.hero .content .bio p {
   font-size: 1rem;
   text-align: justify;
   line-height: 1.8rem;
   font-weight: 500;
 }
 
-.hero .content span {
+.hero .content .bio span {
   color: var(--icon);
-  font-style: italic;
+  font-family: "Lora", sans-serif;
+  font-weight: 600;
 }
 
 .social-media {
@@ -123,7 +123,7 @@ body::-webkit-scrollbar {
   margin-bottom: 2.5rem;
 }
 
-.social-media i {
+.hero .content .social-media i {
   width: 2.5rem;
   height: 2.5rem;
   background-color: rgb(43, 55, 73);
@@ -134,24 +134,25 @@ body::-webkit-scrollbar {
   transition: all 0.3s ease-out;
 }
 
-.social-media ul {
+.hero .content .social-media ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   gap: 2rem;
 }
 
-.social-media ul li {
+.hero .content .social-media ul li {
   list-style: none;
 }
 
-.social-media i {
-  transition: all 0.3s ease-out;
-}
-
-.social-media i:hover {
+.hero .content .social-media i:hover {
   background-color: rgb(76, 90, 110);
   border-radius: 50%;
+}
+
+.hero .content .about {
+  margin-bottom: 2.5rem;
+  /* background: red; */
 }
 
 .hero .content .about h2 {
@@ -165,12 +166,62 @@ body::-webkit-scrollbar {
 .hero .content .about p {
   color: var(--color);
   text-align: justify;
-  line-height: 2rem;
-  margin-bottom: 0.5rem;
+  line-height: 1.8rem;
 }
 
 .hero .content .about span {
   font-style: normal;
+  color: var(--icon);
+  font-family: "Lora", sans-serif;
+  font-weight: 600;
+}
+
+.hero .content .project {
+  margin-bottom: 7.5rem;
+  /* background: red; */
+}
+
+.hero .content .project h2 {
+  color: var(--color);
+  font-size: 1.5rem;
+  letter-spacing: normal;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.project .list-project {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  border-top: 1px solid var(--border);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.project .list-project img {
+  width: 20%;
+  height: 20%;
+  border-radius: 4px;
+}
+
+.hero .content .project .list-project h3 {
+  color: var(--icon);
+  font-size: 1rem;
+  letter-spacing: normal;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.hero .content .project .list-project p {
+  color: var(--color);
+  text-align: justify;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 
 /* Laptop */
