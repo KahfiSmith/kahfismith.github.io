@@ -1,7 +1,6 @@
 :root {
   --background: rgb(15, 23, 42);
   --primary: rgb(30, 41, 59);
-  --third: rgb(51, 65, 85);
   --secondary: rgb(43, 55, 73);
   --icon: rgb(45, 212, 194);
   --color: rgb(203, 213, 225);
@@ -254,6 +253,7 @@ body::-webkit-scrollbar {
   display: flex; 
   justify-content: center; 
   align-items: center; 
+  margin-bottom: 0.2rem;
 }
 
 .project .list-project .desc .tag a {
