@@ -213,6 +213,13 @@ body::-webkit-scrollbar {
   border-radius: 4px;
 }
 
+.project .list-project .desc {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .hero .content .project .list-project h3 {
   color: var(--icon);
   font-size: 1rem;
@@ -237,11 +244,12 @@ body::-webkit-scrollbar {
   flex-wrap: wrap;
   gap: 0.5rem;
   list-style-type: none;
+  margin-bottom: -1rem;
 }
 
 .project .list-project .desc .tag ul li{
   background: var(--bg-tag);
-  border-radius: 40px;
+  border-radius: 50px;
   padding: 0.4rem 0.8rem;
   display: flex; 
   justify-content: center; 
