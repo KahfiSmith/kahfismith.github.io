@@ -778,6 +778,7 @@ video {
 }
 
 .tag {
+  margin-bottom: 1rem;
   display: flex;
   justify-content: flex-start;
   gap: 1rem;

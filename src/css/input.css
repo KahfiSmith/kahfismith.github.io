@@ -19,5 +19,5 @@
 }
 
 .tag {
-  @apply flex justify-start gap-4;
+  @apply flex justify-start gap-4 mb-4;
 }
