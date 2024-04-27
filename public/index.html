@@ -8,6 +8,9 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <style>body::-webkit-scrollbar {
+    width: 0.1em;
+  }</style>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
   </style>
@@ -67,8 +70,8 @@
           </ul>
         </div>
         <div class="mb-8">
-          <h2 class="font-medium mb-4 text-2xl">About me</h2>
-          <p class="text-justify mb-4 leading-7">
+          <h2 class="font-semibold mb-3 text-2xl">About me</h2>
+          <p class="text-justify mb-2 leading-7">
             As someone who really likes learning about technology, I will
             continue to look for ways to deepen and expand his knowledge in
             various technical fields and the latest innovations. From the
@@ -90,16 +93,16 @@
             and watching anime.
           </p>
         </div>
-        <div>
-          <h2 class="font-medium mb-4 text-2xl">Projects</h2>
-          <div>
-            <img src="/image/medmart.png" alt="gambar design medmart" />
+        <div class="mb-28">
+          <h2 class="font-semibold mb-4 text-2xl">Projects</h2>
+          <div class="flex justify-start gap-4 bg-soft border-b border-border cursor-pointer rounded-lg mb-4 p-4 hover:bg-primary ease-out duration-300">
+            <img class="w-1/5 h-1/5 rounded-md" src="/image/medmart.png" alt="gambar design medmart" />
             <div>
-              <h3>Medmart - Platform for buying and selling medicines</h3>
-              <p>
+              <h3 class="text-icon text-xl font-semibold mb-2">Medmart - Platform for buying and selling medicines</h3>
+              <p class="text-base leading-7">
                 Discover the convenience of purchasing medicines with <strong>Medmart</strong> a mobile platform designed to make it easier for you to get medicines quickly and safely from anywhere. With a simple design and elegant colors, this application offers an exceptional and intuitive user experience.
                 <div>
-                  <ul>
+                  <ul class="flex justify-start gap-4">
                     <li>
                       <a href="#">UI Design</a>
                     </li>

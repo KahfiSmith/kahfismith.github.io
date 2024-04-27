@@ -10,8 +10,8 @@ module.exports = {
         icon: "rgb(45, 212, 194)",
         color: "rgb(203, 213, 225)",
         border: "rgb(76, 90, 110)",
-        "bg-tag": "rgb(25, 51, 64)",
-        "bg-hover": "rgb(22, 32, 50)",
+        tag: "rgb(25, 51, 64)",
+        soft: "rgb(22, 32, 50)",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
