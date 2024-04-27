@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-list-project {
+  @apply text-icon text-xl font-semibold mb-2;
+}
+
+.list-project {
+  @apply flex justify-start gap-4 bg-soft border-b border-border cursor-pointer rounded-lg mb-4 p-4 hover:bg-primary ease-out duration-300;
+}
+
+.image-project {
+  @apply w-1/5 h-1/5 rounded-md;
+}
+
+.text-project {
+  @apply text-sm leading-7 mb-6 text-justify;
+}
+
+.tag {
+  @apply flex justify-start gap-4;
+}
