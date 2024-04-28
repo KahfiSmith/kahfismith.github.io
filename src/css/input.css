@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.social-li {
+  @apply flex justify-center items-center h-10 w-10 text-xl rounded-full ease-out duration-300 hover:bg-secondary bg-primary;
+}
+
 .font-list-project {
   @apply text-icon text-xl font-semibold mb-1;
 }
 
 .list-project {
-  @apply flex justify-start gap-4 bg-soft border-b border-border cursor-pointer rounded-lg mb-4 p-4 hover:bg-primary ease-out duration-300;
+  @apply flex justify-start gap-4 bg-soft border-b border-border cursor-pointer rounded-lg mb-4 pt-4 px-4 hover:bg-primary ease-out duration-300;
 }
 
 .image-project {
@@ -27,9 +31,5 @@
 }
 
 .tag-a {
-  @apply  font-semibold text-xs text-icon;
-}
-
-.social-li {
-  @apply flex justify-center items-center h-10 w-10 text-xl rounded-full ease-out duration-300 hover:bg-secondary bg-primary;
+  @apply font-semibold text-xs text-icon;
 }

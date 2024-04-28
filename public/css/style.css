@@ -654,11 +654,6 @@ video {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
 .p-1 {
   padding: 0.25rem;
 }
@@ -738,6 +733,26 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.social-li {
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.social-li:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 55 73 / var(--tw-bg-opacity));
+}
+
 .font-list-project {
   margin-bottom: 0.25rem;
   font-size: 1.25rem;
@@ -745,6 +760,30 @@ video {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(45 212 194 / var(--tw-text-opacity));
+}
+
+.list-project {
+  margin-bottom: 1rem;
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-start;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(76 90 110 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 32 50 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.list-project:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
 .image-project {
@@ -788,26 +827,6 @@ video {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(45 212 194 / var(--tw-text-opacity));
-}
-
-.social-li {
-  display: flex;
-  height: 2.5rem;
-  width: 2.5rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-
-.social-li:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(43 55 73 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-secondary:hover {
