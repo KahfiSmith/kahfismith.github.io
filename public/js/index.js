@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   clickableElements.forEach(function (element) {
     element.addEventListener("click", function () {
       let url = this.getAttribute("data-url");
-      window.open(url, '_blank');
+      window.location.href = url;
     });
   });
 });
