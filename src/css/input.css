@@ -33,3 +33,11 @@
 .tag-a {
   @apply font-semibold text-xs text-icon;
 }
+
+.title-detail {
+  @apply text-3xl text-icon font-semibold mb-4;
+}
+
+.image-detail {
+  @apply flex justify-center rounded-md mb-10;
+}
