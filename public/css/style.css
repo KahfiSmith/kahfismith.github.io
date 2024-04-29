@@ -686,6 +686,21 @@ video {
   padding-bottom: 1rem;
 }
 
+.px-\[\] {
+  padding-left: ;
+  padding-right: ;
+}
+
+.px-\[26\%\] {
+  padding-left: 26%;
+  padding-right: 26%;
+}
+
+.px-\[24\%\] {
+  padding-left: 24%;
+  padding-right: 24%;
+}
+
 .pt-20 {
   padding-top: 5rem;
 }
