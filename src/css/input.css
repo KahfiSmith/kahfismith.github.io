@@ -43,5 +43,5 @@
 }
 
 .image-detail-next {
-  @apply flex justify-center rounded-md mb-6;
+  @apply flex justify-center px-2 gap-4 mb-6;
 }
