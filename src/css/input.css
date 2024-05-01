@@ -39,9 +39,9 @@
 }
 
 .image-detail {
-  @apply flex justify-center rounded-md mb-10;
+  @apply flex justify-center mb-10;
 }
 
-.image-detail-next {
-  @apply flex justify-center px-2 gap-4 mb-6;
+.image-detail-list {
+  @apply flex justify-center mb-8;
 }

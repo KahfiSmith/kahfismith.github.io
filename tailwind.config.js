@@ -16,11 +16,6 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         lora: ["Lora", "sans-serif"],
-      },
-      padding: {
-        '1/4': '25%',
-        '1/3': '33.333333%',
-        '1/2': '50%',
       }
     },
   },
