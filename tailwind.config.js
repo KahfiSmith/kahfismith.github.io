@@ -16,6 +16,9 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         lora: ["Lora", "sans-serif"],
+      },
+      transitionProperty: {
+        'opacity': 'opacity'
       }
     },
   },
