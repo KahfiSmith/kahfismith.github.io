@@ -14,7 +14,6 @@ module.exports = {
         tag: "rgb(25, 51, 64)",
         soft: "rgb(22, 32, 50)",
         light: "rgb(248, 250, 252)",
-        "icon-light": "rgb(42, 133, 128)",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
