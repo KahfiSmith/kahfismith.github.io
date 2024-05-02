@@ -6,6 +6,10 @@
   @apply flex justify-center items-center h-10 w-10 text-xl rounded-full ease-out duration-300 hover:bg-secondary bg-primary;
 }
 
+.social-li-light {
+  @apply flex justify-center items-center h-10 w-10 text-xl rounded-full ease-out duration-300 hover:bg-slate-400 bg-slate-600;
+}
+
 .font-list-project {
   @apply text-icon text-xl font-semibold mb-1;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth focus:scroll-auto">
+<html lang="en" class="scroll-smooth dark">
 
 <head>
   <meta charset="UTF-8" />
@@ -25,17 +25,21 @@
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 </style>
 
-<body class="bg-background text-color font-inter">
+<body class="bg-light text-slate-700 dark:bg-background dark:text-color font-inter">
+
   <!-- navbar -->
   <nav
-    class="flex justify-between items-center fixed z-50 top-0 left-0 right-0 py-4 px-[24%] bg-background border-b border-border">
+    class="flex justify-between items-center fixed z-50 top-0 left-0 right-0 py-4 px-[24%] bg-light border-b border-border dark:bg-background">
     <div class="font-semibold font-lora text-2xl">
-      <a href="#">K<span class="text-icon">Smith</span></a>
+      <a href="#">K<span class="text-icon-light dark:text-icon">Smith</span></a>
     </div>
-    <div class="bg-primary rounded p-1 ease-out duration-300 border-icon hover:bg-secondary">
-      <a href="#"><i data-lucide="sun"></i></a>
+    <div class="bg-light rounded p-1 ease-out border border-border duration-300 dark:bg-primary dark:hover:bg-secondary" id="toggleTheme">
+      <a href="#" id="toggleIconSun"><i data-lucide="sun"></i></a>
+      <a href="#" id="toggleIconMoon" class="hidden"><i data-lucide="moon-star"></i></a>
     </div>
   </nav>
+
+  <!-- section -->
   <section class="pt-20">
     <main class="py-4 px-[24%]">
       <div class="mb-6">
@@ -44,14 +48,14 @@
         </h1>
         <p class="text-base font-medium leading-7 text-justify">
           I'm a
-          <span class="text-icon font-lora font-semibold">Frontend Web Developer</span>
+          <span class="text-icon-light font-lora font-semibold dark:text-icon">Frontend Web Developer</span>
           responsible for creating and optimizing visual elements and
           intuitive interfaces.
         </p>
       </div>
       <div class="mb-8">
         <ul class="flex justify-start items-center gap-4">
-          <li class="social-li">
+          <li class="social-li-light ">
             <a href="https://www.facebook.com/profile.php?id=100028652941985" target="_blank"><i
                 class="fa-brands fa-facebook-f"></i>
             </a>
@@ -75,6 +79,8 @@
           </li>
         </ul>
       </div>
+
+      <!-- about me -->
       <div class="mb-8">
         <h2 class="font-semibold mb-2 text-2xl">About me</h2>
         <p class="text-justify mb-2 leading-7">
@@ -102,6 +108,8 @@
           way I also like playing games and watching anime.
         </p>
       </div>
+
+      <!-- projects -->
       <div class="mb-28">
         <h2 class="font-semibold mb-4 text-2xl">Projects</h2>
         <div class="list-project clickable" data-url="medmart.html">
@@ -272,6 +280,7 @@
       </div>
     </main>
   </section>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();
   </script>
