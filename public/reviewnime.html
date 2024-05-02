@@ -25,17 +25,22 @@
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 </style>
 
-<body class="bg-background text-color font-inter">
+<body class="bg-light text-slate-700 dark:bg-background dark:text-color font-inter">
+
   <!-- navbar -->
   <nav
-    class="flex justify-between items-center fixed z-50 top-0 left-0 right-0 py-4 px-[24%] bg-background border-b border-border">
+    class="flex justify-between items-center fixed z-50 top-0 left-0 right-0 py-4 px-[24%] bg-light border-b border-slate-300 dark:border-b dark:border-primary dark:bg-background">
     <div class="font-semibold font-lora text-2xl">
-      <a href="#">K<span class="text-icon">Smith</span></a>
+      <a href="#">K<span class="dark:text-icon">Smith</span></a>
     </div>
-    <div class="bg-primary rounded p-1 ease-out duration-300 border-icon hover:bg-secondary">
-      <a href="#"><i data-lucide="sun"></i></a>
+    <div class=" rounded-lg p-1 ease-out duration-300 hover:bg-slate-300 dark:bg-primary dark:hover:bg-secondary"
+      id="toggleTheme">
+      <a href="#" id="toggleIconSun"><i data-lucide="moon-star"></i></a>
+      <a href="#" id="toggleIconMoon" class="hidden"><i data-lucide="sun"></i></a>
     </div>
   </nav>
+
+  <!-- section -->
   <section class="pt-20">
     <main class="py-4 px-[24%]">
       <div class="flex items-center mb-3">
