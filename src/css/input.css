@@ -11,11 +11,18 @@
 }
 
 .font-list-project {
+  @apply text-slate-700 text-xl font-semibold mb-1;
+}
+.dark .font-list-project {
   @apply text-icon text-xl font-semibold mb-1;
 }
 
 .list-project {
-  @apply flex justify-start gap-4 bg-soft border-b border-border cursor-pointer rounded-lg mb-4 pt-4 px-4 hover:bg-primary ease-out duration-300;
+  @apply flex justify-start gap-4 bg-white border-b border-slate-300 cursor-pointer rounded-lg mb-4 pt-4 px-4 hover:bg-slate-200 ease-out duration-300 shadow-md;
+}
+
+.dark .list-project {
+  @apply bg-soft border-b border-border hover:bg-primary ease-out duration-300;
 }
 
 .image-project {
@@ -31,15 +38,27 @@
 }
 
 .tag-li {
-  @apply flex justify-center items-center rounded-3xl px-4 py-2 mb-1 bg-tag;
+  @apply flex justify-center items-center rounded-3xl px-4 py-2 mb-1 bg-slate-400;
+}
+
+.dark .tag-li {
+  @apply bg-tag;
 }
 
 .tag-a {
-  @apply font-semibold text-xs text-icon;
+  @apply font-semibold text-xs text-white;
+}
+
+.dark .tag-a {
+  @apply text-icon;
 }
 
 .title-detail {
-  @apply text-3xl text-icon font-semibold mb-4;
+  @apply text-3xl text-slate-700 font-semibold mb-4;
+}
+
+.dark .title-detail {
+  @apply text-icon;
 }
 
 .image-detail {
