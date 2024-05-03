@@ -898,7 +898,7 @@ video {
   align-items: center;
   justify-content: center;
   border-radius: 1.5rem;
-  border-width: 2px;
+  border-width: 1.5px;
   --tw-border-opacity: 1;
   border-color: rgb(203 213 225 / var(--tw-border-opacity));
   padding-left: 1rem;

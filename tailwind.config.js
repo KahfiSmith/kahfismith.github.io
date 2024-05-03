@@ -19,9 +19,9 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
         lora: ["Lora", "sans-serif"],
       },
-      transitionProperty: {
-        opacity: "opacity",
-      },
+      borderWidth: {
+        '1': '1.5px',
+      }
     },
   },
   plugins: [],
