@@ -22,27 +22,37 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const toggleTheme = document.getElementById('toggleTheme');
+  if (localStorage.getItem("theme") === "dark") {
+    document.documentElement.classList.add("dark");
+    document.getElementById("toggleIconSun").classList.add("hidden");
+    document.getElementById("toggleIconMoon").classList.remove("hidden");
+  } else {
+    document.documentElement.classList.remove("dark");
+    document.getElementById("toggleIconSun").classList.remove("hidden");
+    document.getElementById("toggleIconMoon").classList.add("hidden");
+  }
+
+  const toggleTheme = document.getElementById("toggleTheme");
 
   if (toggleTheme) {
-    toggleTheme.addEventListener('click', function(event) {
-      event.preventDefault(); // Prevent default anchor behavior
+    toggleTheme.addEventListener("click", function (event) {
+      event.preventDefault();
 
-      const iconSun = document.getElementById('toggleIconSun');
-      const iconMoon = document.getElementById('toggleIconMoon');
+      const iconSun = document.getElementById("toggleIconSun");
+      const iconMoon = document.getElementById("toggleIconMoon");
+      const body = document.documentElement;
 
-      if (iconSun && iconMoon) {
-        // Toggle visibility by adding or removing 'hidden'
-        iconSun.classList.toggle('hidden');
-        iconMoon.classList.toggle('hidden');
+      body.classList.toggle("dark");
+      iconSun.classList.toggle("hidden");
+      iconMoon.classList.toggle("hidden");
+
+      if (body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
       } else {
-        console.error('Icon elements are missing in the HTML document');
+        localStorage.setItem("theme", "light");
       }
-
-      // Toggle the 'dark' class on the <html> element
-      document.documentElement.classList.toggle('dark');
     });
   } else {
-    console.error('Toggle theme div not found in the document');
+    console.error("Toggle theme div not found in the document");
   }
 });
