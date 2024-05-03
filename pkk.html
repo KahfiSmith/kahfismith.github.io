@@ -5,25 +5,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PKK</title>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+            document.getElementById("toggleIconSun").classList.add("hidden");
+            document.getElementById("toggleIconMoon").classList.remove("hidden");
+        } else {
+            document.documentElement.classList.remove("dark");
+            document.getElementById("toggleIconSun").classList.remove("hidden");
+            document.getElementById("toggleIconMoon").classList.add("hidden");
+        }
+    </script>
+
+    <style>
+        body::-webkit-scrollbar {
+            width: 0.1em;
+        }
+    </style>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+    </style>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+    </style>
 </head>
-
-<script src="https://unpkg.com/lucide@latest"></script>
-<link rel="stylesheet" href="public/css/style.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-<style>
-    body::-webkit-scrollbar {
-        width: 0.1em;
-    }
-</style>
-
-<style>
-    @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
-</style>
-
-<style>
-    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-</style>
 
 <body class="bg-light text-slate-700 dark:bg-background dark:text-color font-inter">
 

@@ -5,28 +5,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="public/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark");
+      document.getElementById("toggleIconSun").classList.add("hidden");
+      document.getElementById("toggleIconMoon").classList.remove("hidden");
+    } else {
+      document.documentElement.classList.remove("dark");
+      document.getElementById("toggleIconSun").classList.remove("hidden");
+      document.getElementById("toggleIconMoon").classList.add("hidden");
+    }
+  </script>
+
+  <style>
+    body::-webkit-scrollbar {
+      width: 0.1em;
+    }
+  </style>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+  </style>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+  </style>
 </head>
 
-<script src="https://unpkg.com/lucide@latest"></script>
-<link rel="stylesheet" href="public/css/style.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-<style>
-  body::-webkit-scrollbar {
-    width: 0.1em;
-  }
-</style>
-
-<style>
-  @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
-</style>
-
-<style>
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-</style>
-
 <body class="bg-light text-slate-700 dark:bg-background dark:text-color font-inter">
-
   <!-- navbar -->
   <nav
     class="flex justify-between items-center fixed z-50 top-0 left-0 right-0 py-4 px-[24%] bg-light border-b border-slate-300 dark:border-b dark:border-primary dark:bg-background">
@@ -39,7 +50,6 @@
       <a href="#" id="toggleIconMoon" class="hidden"><i data-lucide="sun"></i></a>
     </div>
   </nav>
-
   <!-- section -->
   <section class="pt-20">
     <main class="py-4 px-[24%]">
@@ -99,14 +109,15 @@
           basic understanding of
           <span class="dark:text-icon font-lora font-semibold">HTML, CSS, JavaScript, Bootstrap and Tailwind CSS.</span>
           I'm in the process of learning
-          <span class="dark:text-icon font-lora font-semibold">React.js</span> more interactive
-          web applications and
-          <span class="dark:text-icon font-lora font-semibold">Node.js</span> to understand more
-          about server side development. Apart from that, I am also quite
-          fluent in <span class="dark:text-icon font-lora font-semibold">PHP</span> and already
-          have experience using the
-          <span class="dark:text-icon font-lora font-semibold">Laravel</span> framework. By the
-          way I also like playing games and watching anime.
+          <span class="dark:text-icon font-lora font-semibold">React.js</span>
+          more interactive web applications and
+          <span class="dark:text-icon font-lora font-semibold">Node.js</span>
+          to understand more about server side development. Apart from that, I
+          am also quite fluent in
+          <span class="dark:text-icon font-lora font-semibold">PHP</span> and
+          already have experience using the
+          <span class="dark:text-icon font-lora font-semibold">Laravel</span>
+          framework. By the way I also like playing games and watching anime.
         </p>
       </div>
 

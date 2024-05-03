@@ -22,16 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  if (localStorage.getItem("theme") === "dark") {
-    document.documentElement.classList.add("dark");
-    document.getElementById("toggleIconSun").classList.add("hidden");
-    document.getElementById("toggleIconMoon").classList.remove("hidden");
-  } else {
-    document.documentElement.classList.remove("dark");
-    document.getElementById("toggleIconSun").classList.remove("hidden");
-    document.getElementById("toggleIconMoon").classList.add("hidden");
-  }
-
   const toggleTheme = document.getElementById("toggleTheme");
 
   if (toggleTheme) {
