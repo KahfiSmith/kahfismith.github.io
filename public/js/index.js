@@ -6,7 +6,23 @@ function goBackWithAnimation() {
   }, 500);
 }
 
+function adjustTheme() {
+  const iconSun = document.getElementById("toggleIconSun");
+  const iconMoon = document.getElementById("toggleIconMoon");
+  if (localStorage.getItem("theme") === "dark") {
+    document.documentElement.classList.add("dark");
+    iconSun.classList.add("hidden");
+    iconMoon.classList.remove("hidden");
+  } else {
+    document.documentElement.classList.remove("dark");
+    iconSun.classList.remove("hidden");
+    iconMoon.classList.add("hidden");
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+  adjustTheme();
+
   let clickableElements = document.querySelectorAll(".clickable");
   clickableElements.forEach(function (element) {
     element.addEventListener("click", function (event) {

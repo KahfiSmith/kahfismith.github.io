@@ -21,6 +21,7 @@
             document.getElementById("toggleIconMoon").classList.add("hidden");
         }
     </script>
+    <script src="/public/js/index.js"></script>
 
     <style>
         body::-webkit-scrollbar {
@@ -46,8 +47,8 @@
         </div>
         <div class="rounded-lg p-1 ease-out duration-300 hover:bg-slate-300 dark:bg-primary dark:hover:bg-secondary"
             id="toggleTheme">
-            <a href="#" id="toggleIconSun"><i data-lucide="sun"></i></a>
-            <a href="#" id="toggleIconMoon" class="hidden"><i data-lucide="moon-star"></i></a>
+            <a href="#" id="toggleIconSun" class="hidden"><i data-lucide="sun"></i></a>
+            <a href="#" id="toggleIconMoon"><i data-lucide="moon-star"></i></a>
         </div>
     </nav>
     <!-- section -->
@@ -72,7 +73,7 @@
                 </div>
                 <h3 class="font-semibold mb-2 text-2xl">Introduction</h3>
                 <p class="text-justify mb-6 leading-6 text-sm">
-                    Welcome to <strong>Depo Mayar Jaya</strong> a comprehensive web platform specifically designed to
+                    Welcome to <span  class="font-semibold">Depo Mayar Jaya</span> a comprehensive web platform specifically designed to
                     facilitate the management of sales and distribution of products such as gallons of water and LPG.
                     With this website you can optimize your business operations from one integrated dashboard, enabling
                     stock, customer and sales management to be more efficient and effective.
@@ -121,7 +122,6 @@
     <script>
         lucide.createIcons();
     </script>
-    <script src="/public/js/index.js"></script>
 </body>
 
 </html>
