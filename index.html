@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
   <script>
-     if (localStorage.getItem("theme") === "dark" || !localStorage.getItem("theme")) {
+     if (localStorage.getItem("theme") === "dark") {
       document.documentElement.classList.add("dark");
       document.getElementById("toggleIconSun").classList.add("hidden");
       document.getElementById("toggleIconMoon").classList.remove("hidden");
@@ -293,7 +293,7 @@
       </div>
     </main>
     <footer class="py px-[24%]">
-      <p class="font-normal mb-4 text-sm">Crafted by <a href="https://github.com/KahfiSmith" class="dark:text-icon font-medium">Kahfi Smith</a> with ❤️</p>
+      <p class="font-medium mb-4 text-sm">Crafted by <a href="https://github.com/KahfiSmith" class="dark:text-icon font-semibold">Kahfi Smith</a> with ❤️</p>
     </footer>
   </section>
   <script src="https://unpkg.com/lucide@latest"></script>
