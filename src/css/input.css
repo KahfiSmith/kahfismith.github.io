@@ -11,7 +11,7 @@
 }
 
 .font-list-project {
-  @apply text-slate-700 text-xl font-semibold mb-1;
+  @apply text-slate-600 text-xl font-semibold mb-1;
 }
 .dark .font-list-project {
   @apply text-icon text-xl font-semibold mb-1;
