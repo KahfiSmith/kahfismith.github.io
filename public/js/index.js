@@ -2,7 +2,7 @@ function goBackWithAnimation() {
   document.body.style.transition = "opacity 500ms ease-out";
   document.body.style.opacity = "0";
   setTimeout(function () {
-    window.history.back();
+    window.location.href = "/index.html";
   }, 500);
 }
 
