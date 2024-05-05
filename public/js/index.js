@@ -61,4 +61,14 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     console.error("Toggle theme div not found in the document");
   }
+
+  if (window.location.pathname === "/path-where-you-want-this-behavior.html") {
+    window.history.pushState({ page: "anyname" }, "anytitle", "/index.html");
+    window.addEventListener("popstate", function(event) {
+      if(event.state) {
+        window.location.href = "/index.html";
+      }
+    });
+  }
+  
 });
