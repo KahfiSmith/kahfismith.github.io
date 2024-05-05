@@ -21,7 +21,10 @@ module.exports = {
       },
       borderWidth: {
         '1': '1.5px',
-      }
+      },
+      transitionProperty: {
+        'opacity': 'opacity'
+      },
     },
   },
   plugins: [],
