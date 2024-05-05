@@ -11,14 +11,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
   <script>
-     if (localStorage.getItem("theme") === "dark") {
+    if (localStorage.getItem("theme") === "dark") {
       document.documentElement.classList.add("dark");
-      document.getElementById("toggleIconSun").classList.add("hidden");
-      document.getElementById("toggleIconMoon").classList.remove("hidden");
     } else {
       document.documentElement.classList.remove("dark");
-      document.getElementById("toggleIconSun").classList.remove("hidden");
-      document.getElementById("toggleIconMoon").classList.add("hidden");
     }
   </script>
   <script src="public/js/index.js"></script>
@@ -45,7 +41,8 @@
     <div class="font-semibold font-lora text-2xl">
       <a href="#">K<span class="dark:text-icon">Smith</span></a>
     </div>
-    <div class="rounded-lg p-1 ease-out duration-300 bg-slate-200 hover:bg-slate-300 dark:bg-primary dark:hover:bg-secondary"
+    <div
+      class="rounded-lg p-1 ease-out duration-300 bg-slate-200 hover:bg-slate-300 dark:bg-primary dark:hover:bg-secondary"
       id="toggleTheme">
       <a href="#" id="toggleIconSun" class="hidden"><i data-lucide="sun"></i></a>
       <a href="#" id="toggleIconMoon"><i data-lucide="moon-star"></i></a>
@@ -95,20 +92,16 @@
       <!-- about me -->
       <div class="mb-6">
         <h2 class="font-semibold mb-2 text-2xl">About me</h2>
-        <p class="text-justify mb-2 leading-7">
-          As someone who really likes learning about technology, I will
-          continue to look for ways to deepen and expand his knowledge in
-          various technical fields and the latest innovations. From the
-          various fields I have explored, I found that I have a strong
-          interest in web design and development. Therefore, I decided to
+        <p class="text-justify leading-7 mb-4">
+          I decided to
           become a frontend developer because this profession allows me to
           combine creativity and technical skills in creating effective and
           interesting user experiences.
-        </p>
-        <p class="text-justify leading-7">
           Currently, I'm still in the beginning stages as a developer, with a
           basic understanding of
           <span class="dark:text-icon font-lora font-semibold">HTML, CSS, JavaScript, Bootstrap and Tailwind CSS.</span>
+        </p>
+        <p class="text-justify leading-7">
           I'm in the process of learning
           <span class="dark:text-icon font-lora font-semibold">React.js</span>
           more interactive web applications and
@@ -293,13 +286,15 @@
       </div>
     </main>
     <footer class="py px-[24%]">
-      <p class="font-medium mb-4 text-sm">Crafted by <a href="https://github.com/KahfiSmith" class="dark:text-icon font-semibold">Kahfi Smith</a> with ❤️</p>
+      <p class="font-medium mb-4 text-sm">Crafted by <a href="https://github.com/KahfiSmith"
+          class="dark:text-icon font-semibold">Kahfi Smith</a> with ❤️</p>
     </footer>
   </section>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();
   </script>
+
 </body>
 
 </html>

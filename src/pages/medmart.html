@@ -13,12 +13,8 @@
   <script>
     if (localStorage.getItem("theme") === "dark") {
       document.documentElement.classList.add("dark");
-      document.getElementById("toggleIconSun").classList.add("hidden");
-      document.getElementById("toggleIconMoon").classList.remove("hidden");
     } else {
       document.documentElement.classList.remove("dark");
-      document.getElementById("toggleIconSun").classList.remove("hidden");
-      document.getElementById("toggleIconMoon").classList.add("hidden");
     }
   </script>
   <script src="/public/js/index.js"></script>
@@ -64,7 +60,7 @@
           <span class="font-medium">Back</span>
         </a>
       </div>
-      <p class="text-sm mb-6">Juny 28, 2023</p>
+      <p class="text-sm mb-6">June 28, 2023</p>
       <h2 class="title-detail">
         Medmart - Platform for buying and selling medicines
       </h2>
@@ -166,6 +162,7 @@
   <script>
     lucide.createIcons();
   </script>
+
 </body>
 
 </html>
