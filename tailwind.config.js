@@ -13,7 +13,7 @@ module.exports = {
         border: "rgb(76, 90, 110)",
         tag: "rgb(25, 51, 64)",
         soft: "rgb(22, 32, 50)",
-        light: "rgb(248, 250, 252)",
+        light: "rgb(242, 248, 252)",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
